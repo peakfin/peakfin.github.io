@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 23 Jul 2024 18:44:16 +0900</lastBuildDate>
     <atom:link href="https://peakfin.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://peakfin.github.io/posts/my-first-post/</link>
+      <title>게시물 테스트 타이틀</title>
+      <link>https://peakfin.github.io/posts/%EC%8A%AC%EB%9F%AC%EA%B7%B8/</link>
       <pubDate>Tue, 23 Jul 2024 18:44:16 +0900</pubDate>
-      <guid>https://peakfin.github.io/posts/my-first-post/</guid>
+      <guid>https://peakfin.github.io/posts/%EC%8A%AC%EB%9F%AC%EA%B7%B8/</guid>
       <description></description>
     </item>
   </channel>
