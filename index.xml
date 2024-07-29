@@ -6,35 +6,14 @@
     <description>Recent content on PeakFin.386</description>
     <generator>Hugo</generator>
     <language>kr</language>
-    <lastBuildDate>Mon, 29 Jul 2024 12:09:24 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jul 2024 12:07:46 +0900</lastBuildDate>
     <atom:link href="https://peakfin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>소개</title>
       <link>https://peakfin.github.io/about/</link>
       <pubDate>Mon, 29 Jul 2024 12:07:46 +0900</pubDate>
       <guid>https://peakfin.github.io/about/</guid>
-      <description> </description>
-    </item>
-    <item>
-      <title>First Post</title>
-      <link>https://peakfin.github.io/posts/algorithm/first-post/</link>
-      <pubDate>Mon, 29 Jul 2024 12:09:24 +0900</pubDate>
-      <guid>https://peakfin.github.io/posts/algorithm/first-post/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>First Post</title>
-      <link>https://peakfin.github.io/posts/graphics/first-post/</link>
-      <pubDate>Mon, 29 Jul 2024 12:08:46 +0900</pubDate>
-      <guid>https://peakfin.github.io/posts/graphics/first-post/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>First Post</title>
-      <link>https://peakfin.github.io/posts/cc&#43;&#43;/first-post/</link>
-      <pubDate>Mon, 29 Jul 2024 12:08:33 +0900</pubDate>
-      <guid>https://peakfin.github.io/posts/cc&#43;&#43;/first-post/</guid>
-      <description></description>
+      <description>게임을 좋아하는 게임 프로그래머로써 누군가와 공유하고 싶은 지식이나 노하우를 여기에 남깁니다.&#xA;그외 잡다한 개발 공부 관련 내용들도 공유합니다.</description>
     </item>
   </channel>
 </rss>

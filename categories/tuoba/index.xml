@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tuoba on PeakFin.386</title>
-    <link>https://peakfin.github.io/categories/tuoba/</link>
+    <link>http://localhost:1313/categories/tuoba/</link>
     <description>Recent content in Tuoba on PeakFin.386</description>
     <generator>Hugo</generator>
     <language>kr</language>
     <lastBuildDate>Mon, 29 Jul 2024 12:07:46 +0900</lastBuildDate>
-    <atom:link href="https://peakfin.github.io/categories/tuoba/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/tuoba/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>소개</title>
-      <link>https://peakfin.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 29 Jul 2024 12:07:46 +0900</pubDate>
-      <guid>https://peakfin.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description> </description>
     </item>
   </channel>
