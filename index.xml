@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PeakFin.386</title>
-    <link>http://localhost:1313/</link>
+    <link>https://peakfin.github.io/</link>
     <description>Recent content on PeakFin.386</description>
     <generator>Hugo</generator>
     <language>kr</language>
     <lastBuildDate>Mon, 29 Jul 2024 12:09:24 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://peakfin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>소개</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://peakfin.github.io/about/</link>
       <pubDate>Mon, 29 Jul 2024 12:07:46 +0900</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://peakfin.github.io/about/</guid>
       <description> </description>
     </item>
     <item>
       <title>First Post</title>
-      <link>http://localhost:1313/posts/algorithm/first-post/</link>
+      <link>https://peakfin.github.io/posts/algorithm/first-post/</link>
       <pubDate>Mon, 29 Jul 2024 12:09:24 +0900</pubDate>
-      <guid>http://localhost:1313/posts/algorithm/first-post/</guid>
+      <guid>https://peakfin.github.io/posts/algorithm/first-post/</guid>
       <description></description>
     </item>
     <item>
       <title>First Post</title>
-      <link>http://localhost:1313/posts/graphics/first-post/</link>
+      <link>https://peakfin.github.io/posts/graphics/first-post/</link>
       <pubDate>Mon, 29 Jul 2024 12:08:46 +0900</pubDate>
-      <guid>http://localhost:1313/posts/graphics/first-post/</guid>
+      <guid>https://peakfin.github.io/posts/graphics/first-post/</guid>
       <description></description>
     </item>
     <item>
       <title>First Post</title>
-      <link>http://localhost:1313/posts/cc&#43;&#43;/first-post/</link>
+      <link>https://peakfin.github.io/posts/cc&#43;&#43;/first-post/</link>
       <pubDate>Mon, 29 Jul 2024 12:08:33 +0900</pubDate>
-      <guid>http://localhost:1313/posts/cc&#43;&#43;/first-post/</guid>
+      <guid>https://peakfin.github.io/posts/cc&#43;&#43;/first-post/</guid>
       <description></description>
     </item>
   </channel>
