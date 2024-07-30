@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on PeakFin.386</title>
-    <link>https://peakfin.github.io/posts/</link>
-    <description>Recent content in Posts on PeakFin.386</description>
+    <title>#머릿말 on PeakFin.386</title>
+    <link>https://peakfin.github.io/tags/%23%EB%A8%B8%EB%A6%BF%EB%A7%90/</link>
+    <description>Recent content in #머릿말 on PeakFin.386</description>
     <generator>Hugo</generator>
     <language>kr</language>
     <lastBuildDate>Tue, 30 Jul 2024 11:15:48 +0900</lastBuildDate>
-    <atom:link href="https://peakfin.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://peakfin.github.io/tags/%23%EB%A8%B8%EB%A6%BF%EB%A7%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>머릿말</title>
       <link>https://peakfin.github.io/posts/graphics/preface/</link>
