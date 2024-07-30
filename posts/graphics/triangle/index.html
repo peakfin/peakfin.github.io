@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="kr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="kr"><head>
     <title>PeakFin.386</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#000084" />
-    <link rel="icon" href="http://localhost:1313//favicon.ico">
-    <link rel="canonical" href="http://localhost:1313/">
+    <link rel="icon" href="https://peakfin.github.io//favicon.ico">
+    <link rel="canonical" href="https://peakfin.github.io/">
     
     
 </head>
@@ -16,14 +16,14 @@
     <div class="navbar-inner">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
-            <a class="brand" href="http://localhost:1313/">PeakFin.386</a>
+            <a class="brand" href="https://peakfin.github.io/">PeakFin.386</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     
                     
                         
                             <li>
-                                <a href="/posts">
+                                <a href="/posts/">
                                     
                                     <span>모든글</span>
                                 </a>
@@ -32,7 +32,7 @@
                     
                         
                             <li>
-                                <a href="/about">
+                                <a href="/about/">
                                     
                                     <span>소개</span>
                                 </a>
@@ -47,19 +47,22 @@
 
 <div class="row-fluid navmargin">
     <div class="page-header">
-        <h1>그래픽스 노하우 1.삼각형 - Mon, Jul 29, 2024</h1>
+        <h1>그래픽스 노하우 1.삼각형 - Tue, Jul 30, 2024</h1>
     </div>
     <p class="lead">화려해 보이는 게임 화면도 결국 삼각형을 연속으로 그리고 있을 뿐이다.
 </p>
-    <p>게임 화면은 결국 논리적인 관점에서 삼각형을 연속으로 그리고 있을 뿐이다. 기계적으로 깊이 들어가면 이야기가 달라지지만 게임 프로그래머로써는 일단 이 정도 이해로 충분하다고 생각한다.</p>
-<p>openGL, openGL es, Direct x, Metal, Vulkan&hellip;.. 모두 마찬가지다.</p>
-<p>아무리 복잡한 폴리곤을 가진 3D 모델이라도 결국 우리가 보는 화면에 투영된 3각형으로 쪼개져서 그려지는 것이다. 따라서 투영해 그릴 삼각형의 개수가 적을수록 성능이 좋은 것이고 한 번에 모아서 그릴수록 성능이 좋은 것이다. 이게 드로 콜을 줄인다는 의미이다.</p>
-<p>open</p>
+    <p>삼각형은 일직선 위에 놓여있지 않은 3개의 점과 선분으로 이루어진 다각형으로 평면 상에서 가장 단순한 모양의 다각형이다.</p>
+<p>우리가 보는 게임의 화면은 논리적으로는 3차원 공간 일수 있지만 물리적으로는 결국 평면이다. 이는 화면에 그릴 요소들을 가장 단순한 모양으로 쪼개면 삼각형 단위로 만들 수 있다는 것이다.</p>
+<p>게임 화면은 결국 삼각형을 연속으로 그리고 있을 뿐이다. 기계적으로 깊이 들어가면 이야기가 달라지지만 게임 프로그래머로써는 일단 이 정도 이해로 충분하다고 생각한다.</p>
+<p>openGL, openGL es, Direct x, Metal, Vulkan 에서도 모두 마찬가지라고 생각하면 된다.</p>
+<p>컴퓨터를 이용해 원을 그리더라도 피자의 조각 같은 삼각형들을 그리고 있는 것이다. 정밀도를 높이고 싶다면 조각을 더 작게 만들 뿐.</p>
+<p>고로 아무리 복잡한 폴리곤을 가진 3D 모델이라도 결국 우리가 보는 화면에 투영된 3각형으로 쪼개져서 그려지는 것이다. 따라서 투영해 그릴 삼각형의 개수가 적을수록 성능이 좋은 것이고 한 번에 모아서 그릴수록 성능이 좋은 것이다. 이것은 드로 콜을 줄인다는 것과 일맥상통한다. 즉 성능이 향상된다는 것이다.</p>
+<p>별거 아닌 거 같은 내용이지만 실무에서 만난 사람들을 보면 잊어버리고 있거나 신경 쓰지 못하는 경우가 많은 게 사실이다. 모르는 게 아니라 익숙하지 않거나 신경 쓰지 않는다고 해야 할까&hellip; 하지만 좋은 게임을 만들기 위해서는 최적화가 정말 중요하며 그 최적화의 기본이 되는 내용이라고 생각하기 때문에 첫 글로 남겨본다.</p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 
-    <h4><a href="http://localhost:1313/"></a></h4>
+    <h4><a href="https://peakfin.github.io/"></a></h4>
 </div>
 
 
