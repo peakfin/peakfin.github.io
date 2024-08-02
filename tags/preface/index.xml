@@ -10,6 +10,13 @@
     <atom:link href="https://peakfin.github.io/tags/preface/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>머릿말</title>
+      <link>https://peakfin.github.io/posts/cc&#43;&#43;/preface/</link>
+      <pubDate>Tue, 30 Jul 2024 11:15:48 +0900</pubDate>
+      <guid>https://peakfin.github.io/posts/cc&#43;&#43;/preface/</guid>
+      <description>게임 프로그래머로써 기본적인 그래픽스에 관한 노하우를 글로 정리해 보고자 한다.&#xA;대부분 짧은 글의 형식이 될 것 같은데 종종 예제를 만들거나 코드가 추가될수도&amp;hellip;.&#xA;솔찍히 내가 딱히 기술적으로 뛰어난 개발자도 아니고 순수하게 혼자 생각을 정리하기 위한 시리즈의 글을 작성할 예정이기에 혹시라도 이 글을 보고 교정이 필요한 부분을 찾거나 하고 싶은 이야기가 있으신 분들은 블로그 하단의 메일 주소로 메일을 보내주시면 감사하겠습니다.</description>
+    </item>
+    <item>
+      <title>머릿말</title>
       <link>https://peakfin.github.io/posts/graphics/preface/</link>
       <pubDate>Tue, 30 Jul 2024 11:15:48 +0900</pubDate>
       <guid>https://peakfin.github.io/posts/graphics/preface/</guid>
