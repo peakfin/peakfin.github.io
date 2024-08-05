@@ -6,7 +6,7 @@
     <description>Recent content in Triangle on PeakFin.386</description>
     <generator>Hugo</generator>
     <language>kr</language>
-    <lastBuildDate>Mon, 05 Aug 2024 09:23:48 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 Aug 2024 09:15:48 +0900</lastBuildDate>
     <atom:link href="https://peakfin.github.io/tags/triangle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>그래픽스 노하우 1.삼각형</title>
@@ -14,13 +14,6 @@
       <pubDate>Tue, 30 Jul 2024 12:15:48 +0900</pubDate>
       <guid>https://peakfin.github.io/posts/graphics/triangle/</guid>
       <description>삼각형은 일직선 위에 놓여있지 않은 3개의 점과 선분으로 이루어진 다각형으로 평면 상에서 가장 단순한 모양의 다각형이다.&#xA;우리가 보는 게임의 화면은 논리적으로는 3차원 공간 일수 있지만 물리적으로는 결국 평면이다. 이는 화면에 그릴 요소들을 가장 단순한 모양으로 쪼개면 삼각형 단위로 만들 수 있다는 것이다.&#xA;게임 화면은 결국 삼각형을 연속으로 그리고 있을 뿐이다. 기계적으로 깊이 들어가면 이야기가 달라지지만 게임 프로그래머로써는 일단 이 정도 이해로 충분하다고 생각한다.&#xA;openGL, openGL es, Direct x, Metal, Vulkan 에서도 모두 마찬가지라고 생각하면 된다.</description>
-    </item>
-    <item>
-      <title>그래픽스 노하우 1-1.삼각형의 안을 채우는 방식, 파이프라인에 대한 감상</title>
-      <link>https://peakfin.github.io/posts/graphics/triangle_1/</link>
-      <pubDate>Mon, 05 Aug 2024 09:23:48 +0900</pubDate>
-      <guid>https://peakfin.github.io/posts/graphics/triangle_1/</guid>
-      <description> </description>
     </item>
     <item>
       <title>그래픽스 노하우 1-1.삼각형의 안을 채우는 방식, 파이프라인에 대한 감상</title>
