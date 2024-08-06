@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>메모리 on PeakFin.386</title>
+    <link>https://peakfin.github.io/tags/%EB%A9%94%EB%AA%A8%EB%A6%AC/</link>
+    <description>Recent content in 메모리 on PeakFin.386</description>
+    <generator>Hugo</generator>
+    <language>kr</language>
+    <lastBuildDate>Tue, 06 Aug 2024 09:23:11 +0900</lastBuildDate>
+    <atom:link href="https://peakfin.github.io/tags/%EB%A9%94%EB%AA%A8%EB%A6%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>그래픽스 노하우 3. 메모리</title>
+      <link>https://peakfin.github.io/posts/graphics/memory/</link>
+      <pubDate>Tue, 06 Aug 2024 09:23:11 +0900</pubDate>
+      <guid>https://peakfin.github.io/posts/graphics/memory/</guid>
+      <description>컴퓨터에서 데이터를 저장하는 공간을 이야기한다. 개인적으로는 4가지로 분류해 생각하며 그 기분은 아래와 같다.&#xA;RAM (시스템 메모리) DISK (시스템 외부 저장장치) VRAM (GPU, 그래픽 카드 메모리) REGISTER (CPU 내부 저장장치) 컴퓨터에서 데이터는 위의 저장 공간들을 차지하고 버스를 통해 다른 공간으로 이동한다. 이는 단순해 보이지만 CPU나 GPU의 리소스를 꽤 잡아먹는 경우가 많다. 우리가 이사를 할 때 단순히 짐을 이동하면 되는 것 같지만 실제론 여러 노하우가 필요한 것과 마찬가지라고 생각하면 좋은데 여기서 이삿짐센터가 CPU나 GPU라고 생각하면 될 것 같다.</description>
+    </item>
+  </channel>
+</rss>

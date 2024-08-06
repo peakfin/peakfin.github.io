@@ -6,7 +6,7 @@
     <description>Recent content on PeakFin.386</description>
     <generator>Hugo</generator>
     <language>kr</language>
-    <lastBuildDate>Fri, 02 Aug 2024 09:15:48 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 06 Aug 2024 09:23:11 +0900</lastBuildDate>
     <atom:link href="https://peakfin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>머릿말</title>
@@ -28,6 +28,13 @@
       <pubDate>Fri, 02 Aug 2024 09:15:48 +0900</pubDate>
       <guid>https://peakfin.github.io/posts/graphics/pixel/</guid>
       <description>간략하게 각 Graphics API에서 픽셀의 최종 색을 결정하는 방법을 소개하고 파이프라인에 대한 이야기를 살짝 해보고자 한다.&#xA;개인적으로 실무에서 써본 Graphics API는 openGL, openGL es, Metal이고 DirectX와 Vulkan은 실무에서 사용해 보지는 못하고 학습만 해봤다.&#xA;각 API들은 GPU에서 그래픽을 그리는 과정의 단계들을 파이프라인으로 정의해 사용 중이고 이 파이프라인은 입력된 데이터가 화면에 그려지기까지의 순서를 규정한다. 각 단계에서는 다양한 셰이더 프로그램을 통해 개발자가 관여할 수 있다는 공통점이 있지만 어떤 API를 사용하는지와 버전에 따라 사용 가능한 셰이더의 종류와 개수는 차이가 있다.</description>
+    </item>
+    <item>
+      <title>그래픽스 노하우 3. 메모리</title>
+      <link>https://peakfin.github.io/posts/graphics/memory/</link>
+      <pubDate>Tue, 06 Aug 2024 09:23:11 +0900</pubDate>
+      <guid>https://peakfin.github.io/posts/graphics/memory/</guid>
+      <description>컴퓨터에서 데이터를 저장하는 공간을 이야기한다. 개인적으로는 4가지로 분류해 생각하며 그 기분은 아래와 같다.&#xA;RAM (시스템 메모리) DISK (시스템 외부 저장장치) VRAM (GPU, 그래픽 카드 메모리) REGISTER (CPU 내부 저장장치) 컴퓨터에서 데이터는 위의 저장 공간들을 차지하고 버스를 통해 다른 공간으로 이동한다. 이는 단순해 보이지만 CPU나 GPU의 리소스를 꽤 잡아먹는 경우가 많다. 우리가 이사를 할 때 단순히 짐을 이동하면 되는 것 같지만 실제론 여러 노하우가 필요한 것과 마찬가지라고 생각하면 좋은데 여기서 이삿짐센터가 CPU나 GPU라고 생각하면 될 것 같다.</description>
     </item>
     <item>
       <title>소개</title>
