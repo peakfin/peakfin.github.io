@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="kr"><head>
+    <title>PeakFin.386</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000084" />
+    <link rel="icon" href="https://peakfin.github.io//favicon.ico">
+    <link rel="canonical" href="https://peakfin.github.io/">
+    
+    
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
+            <a class="brand" href="https://peakfin.github.io/">PeakFin.386</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+                    
+                        
+                            <li>
+                                <a href="/posts/">
+                                    
+                                    <span>모든글</span>
+                                </a>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <a href="/about/">
+                                    
+                                    <span>소개</span>
+                                </a>
+                            </li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav><div id="content" class="container">
+
+<div class="row-fluid navmargin">
+    <div class="page-header">
+        <h1>그래픽스 노하우 4. CPU, GPU - Mon, Aug 12, 2024</h1>
+    </div>
+    <p class="lead">CPU와 GPU의 구조와 특징을 이해하면 더 좋은 게임을 만들 수 있다.
+</p>
+    <!-- raw HTML omitted -->
+<p>CPU와 GPU는 컴퓨터의 연산을 담당하는 장치들이다. 게임 개발에 있어서 이 장치들에 대한 이해는 필수적이며 내 코드가 하드웨어에서 어떻게 돌아갈지 생각하는 것은 모든 프로그래머에게 필요한 자세라고 생각한다. CPU와 GPU는 각기 다른 용도를 가지고 있고 그에 따라 발전된 방향도 달라 지금에 와서는 강점을 가지는 부분이 명확히 나뉘었으며 각자의 강점을 바탕으로 협력하여 다양한 작업을 효율적으로 처리하기 때문에 개인적으로는 상호 보완적인 장치라고 생각한다.</p>
+<p>그럼 CPU와 GPU에 대해 간락한 설명을 해보겠다.</p>
+<p>CPU는 여러 개의 코어를 가지고 있고 각 코어는 명령을 실행할 수 있는 독립적인 장치다. 일반적으로 CPU 코어는 강한 연산 능력(높은 클럭)을 가지고 있어 복잡한 작업을 수행하기에 유리하다. CPU는 빠른 데이터 접근을 위해 여러 계층의 캐시 메모리를 가지고 있고 이는 메모리와 CPU 간의 속도 차이를 줄이는데 큰 역할을 한다. 이에 대해 간단히 설명하자면 CPU는 연산을 위해 필요한 값들을 레지스터에 저장해야 하는데 이때 필요한 값들을 매번 RAM에서 찾아 올리는 건 성능이 부족하기에 이를 보안하는 것이 캐시 메모리라고 생각하면 된다. 실제로는 복잡한 과정이 있지만 여기에선 이 정도 이해만 해도 충분하다. 각 코어별로 독립적으로 가지고 있는 레이어의 캐시도 있고 코어 간 공유하는 레이어의 캐시도 있다. 그리고 CPU는 제어 유닛(Control Unit)을 통해 명령을 해석하고 실행을 제어한다. 제어 유닛은 각 코어마다 독립적으로 가지고 있으며 CPU의 두뇌라고 할 수 있으며 CPU가 수행해야 할 모든 일을 주관해 제어한다. ALU(Arithmetic Logic Unit)는 산술연산과 논리 연산을 수행하는 장치로 CPU가 다양한 계산과 논리적 결정을 담당하며 프로세서의 기본적인 연산 능력을 결정하며 ALU는 각 코어마다 독립적으로 가지고 있다.</p>
+<p>CPU는 높은 싱글 스레드 성능을 가지고 있으며 높은 범용성을 가진 프로세서로 다양한 작업을 효율적으로 처리할 수 있으며 여러 레이어의 캐시를 통해 데이터 접근이 빠른 편이다. 그러나 GPU에 비해 코어 수가 적어 병렬 처리에 한계가 있으며 높은 클럭을 위해 전력 소모와 발열이 큰 단점도 가지고 있다.</p>
+<p>GPU는 SMs(Streaming Multiprocessros)라는 용어가 있을 정도로 수많은 코어를 가지고 있고 병렬처리에 특화되어 있다. 각 코어는 CPU와 비교하면 상대적으로 간단한 연산을 처리할 수 있다. 굉장이 넓은 메모리 대역폭을 가지고 있다는 특징을 가지고 있고 이는 GPU 코어와 VRAM 간의 전송속도가 매우 빠르다는 것을 의미한다. 그리고 텍스처 유닛이라는 것을 통해 모델에 텍스처를 적용하는데 이때 필터링 및 샘플링을 처리하고 이것을 통해 압축 텍스처를 지원한다.</p>
+<p>수천 개의 코어가 동시에 작업을 수행 가능해 병렬 저리 능력이 매우 높고 특정 작업(그래픽 렌더링, AI 모델 훈련) 등에서 엄청난 효율을 보이는 반면 범용성이 낮고 메모리 관리가 어려운 편이다.</p>
+<p>자 이렇게 위의 내용을 이해하고 나면 CPU와 GPU가 각각 어떤 일을 잘하는지 판단을 내릴 수 있을 것이고 내가 만든 코드에 연산들을 어떤 장치를 사용해야 할지 판단을 내릴 수 있을 것이다.</p>
+<p>좀 구체적인 예를 든다면 CPU에서는 게임 로직 처리와 물리 엔진의 계산, 입력 처리 및 리소스 관리를 담당한다면 효율적일 것이고 GPU는 렌더링, 파티클 시스템, 포스트 프로세스, 복잡한 물리 시뮬레이션 등을 담당하는 것이 효율적일 것이다.</p>
+<p>렌더링 루프와 로직 루프를 별도로 사용하며 로직은 CPU를 통해 업데이트하고 그 사이에 GPU로 프레임의 렌더링을 처리하는 것이 일반적이다.</p>
+<p>여기서 좀 더 심층적으로 들어간다며 CUDA, SIMD와 같은 키워드 들을 검색해 보기 바란다. 물론 추후에 이 블로그에서 다루게 될 수도 있다.</p>
+<p>그럼 이만.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+    <h4><a href="https://peakfin.github.io/"></a></h4>
+</div>
+
+
+        </div><footer class="container">
+    <hr class="soften">
+    <p>
+&copy; 
+
+    PeakFin
+
+<span id="thisyear">2024</span>
+
+    | <a href="https://peakfin.github.io/">PeakFin.386</a> | <a href="mailto:peakfin2@gmail.com">peakfin2@gmail.com</a>
+
+
+</p>
+    <p class="text-center">
+        
+        
+        
+        
+        
+    </p>
+</footer>
+
+</body><link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/bootstrap-responsive.css">
+<link rel="stylesheet" href="/css/style.css">
+
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap-386.js"></script>
+<script src="/js/bootstrap-transition.js"></script>
+<script src="/js/bootstrap-alert.js"></script>
+<script src="/js/bootstrap-modal.js"></script>
+<script src="/js/bootstrap-dropdown.js"></script>
+<script src="/js/bootstrap-scrollspy.js"></script>
+<script src="/js/bootstrap-tab.js"></script>
+<script src="/js/bootstrap-tooltip.js"></script>
+<script src="/js/bootstrap-popover.js"></script>
+<script src="/js/bootstrap-button.js"></script>
+<script src="/js/bootstrap-collapse.js"></script>
+<script src="/js/bootstrap-carousel.js"></script>
+<script src="/js/bootstrap-typeahead.js"></script>
+<script src="/js/bootstrap-affix.js"></script>
+<script>
+    _386 = { 
+        fastLoad: false ,
+        onePass: false , 
+        speedFactor: 1 
+    };
+
+    
+    function ThisYear() {
+        document.getElementById('thisyear').innerHTML = new Date().getFullYear();
+    };
+</script>
+</html>

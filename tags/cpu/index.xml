@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CPU on PeakFin.386</title>
+    <link>https://peakfin.github.io/tags/cpu/</link>
+    <description>Recent content in CPU on PeakFin.386</description>
+    <generator>Hugo</generator>
+    <language>kr</language>
+    <lastBuildDate>Mon, 12 Aug 2024 09:21:38 +0900</lastBuildDate>
+    <atom:link href="https://peakfin.github.io/tags/cpu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>그래픽스 노하우 4. CPU, GPU</title>
+      <link>https://peakfin.github.io/posts/graphics/cpu_gpu/</link>
+      <pubDate>Mon, 12 Aug 2024 09:21:38 +0900</pubDate>
+      <guid>https://peakfin.github.io/posts/graphics/cpu_gpu/</guid>
+      <description>CPU와 GPU는 컴퓨터의 연산을 담당하는 장치들이다. 게임 개발에 있어서 이 장치들에 대한 이해는 필수적이며 내 코드가 하드웨어에서 어떻게 돌아갈지 생각하는 것은 모든 프로그래머에게 필요한 자세라고 생각한다. CPU와 GPU는 각기 다른 용도를 가지고 있고 그에 따라 발전된 방향도 달라 지금에 와서는 강점을 가지는 부분이 명확히 나뉘었으며 각자의 강점을 바탕으로 협력하여 다양한 작업을 효율적으로 처리하기 때문에 개인적으로는 상호 보완적인 장치라고 생각한다.&#xA;그럼 CPU와 GPU에 대해 간락한 설명을 해보겠다.&#xA;CPU는 여러 개의 코어를 가지고 있고 각 코어는 명령을 실행할 수 있는 독립적인 장치다.</description>
+    </item>
+  </channel>
+</rss>
