@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C,c&#43;&#43; on PeakFin.386</title>
+    <link>https://peakfin.github.io/tags/cc&#43;&#43;/</link>
+    <description>Recent content in C,c&#43;&#43; on PeakFin.386</description>
+    <generator>Hugo</generator>
+    <language>kr</language>
+    <lastBuildDate>Mon, 19 Aug 2024 11:15:48 +0900</lastBuildDate>
+    <atom:link href="https://peakfin.github.io/tags/cc++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>머릿말</title>
+      <link>https://peakfin.github.io/posts/cc&#43;&#43;/preface/</link>
+      <pubDate>Mon, 19 Aug 2024 11:15:48 +0900</pubDate>
+      <guid>https://peakfin.github.io/posts/cc&#43;&#43;/preface/</guid>
+      <description>가장 주력으로 삼고 있는 c, c++에 관한 이야기를 남겨보고자 한다. 그냥 그때그때 생각나거나 하고 싶은 이야기가 있으면 하나씩 글을 남겨보겠다.</description>
+    </item>
+  </channel>
+</rss>
