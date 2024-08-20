@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>C&#43;&#43; on PeakFin.386</title>
-    <link>https://peakfin.github.io/tags/c&#43;&#43;/</link>
-    <description>Recent content in C&#43;&#43; on PeakFin.386</description>
+    <title>Calling Convention on PeakFin.386</title>
+    <link>https://peakfin.github.io/tags/calling-convention/</link>
+    <description>Recent content in Calling Convention on PeakFin.386</description>
     <generator>Hugo</generator>
     <language>kr</language>
     <lastBuildDate>Tue, 20 Aug 2024 05:08:46 +0900</lastBuildDate>
-    <atom:link href="https://peakfin.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>머릿말</title>
-      <link>https://peakfin.github.io/posts/cc&#43;&#43;/preface/</link>
-      <pubDate>Mon, 19 Aug 2024 11:15:48 +0900</pubDate>
-      <guid>https://peakfin.github.io/posts/cc&#43;&#43;/preface/</guid>
-      <description>게임 클라이언트 개발자로 일을 하다 보면 결국 c, c++가 주력 언어가 될 수 밖에 없다고 생각한다.&#xA;이유는 여러 가지가 있겠지만 게임 클라이언트 개발자는 그래픽스 프로그래밍을 해야하고 그래픽스 API는 c, c++ 기반으로 만들어지기 때문이다. 상용 엔진을 사용하더라도 마찬가지이다.&#xA;그래서 가장 주력으로 삼고 있는 c, c++에 관한 이야기를 남겨보고자 한다. 그냥 그때그때 생각나거나 하고 싶은 이야기가 있으면 하나씩 글을 남겨보겠다.</description>
-    </item>
+    <atom:link href="https://peakfin.github.io/tags/calling-convention/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>c,c&#43;&#43; 이야기 1.호출규약</title>
       <link>https://peakfin.github.io/posts/cc&#43;&#43;/calling_convention/</link>

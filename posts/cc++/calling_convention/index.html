@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="kr"><head>
+    <title>PeakFin.386</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000084" />
+    <link rel="icon" href="https://peakfin.github.io//favicon.ico">
+    <link rel="canonical" href="https://peakfin.github.io/">
+    
+    
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
+            <a class="brand" href="https://peakfin.github.io/">PeakFin.386</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+                    
+                        
+                            <li>
+                                <a href="/posts/">
+                                    
+                                    <span>모든글</span>
+                                </a>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <a href="/about/">
+                                    
+                                    <span>소개</span>
+                                </a>
+                            </li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav><div id="content" class="container">
+
+<div class="row-fluid navmargin">
+    <div class="page-header">
+        <h1>c,c&#43;&#43; 이야기 1.호출규약 - Tue, Aug 20, 2024</h1>
+    </div>
+    <p class="lead">호출 규약을 모르면 풀지 못하는 문제가 있다.
+</p>
+    <p>이 글에서는 호출 규약에 대한 대략적인 내용과 나의 견해를 남기고자 한다.</p>
+<p>호출 규약이란 C에서 함수를 사용할 때 함수를 호출하는 입장과 호출 받는 입장에서의 데이터 전달 방식과 스택 사용 방식에 대한 규칙이라고 할 수 있다. 주로 매개변수가 스택에 푸시되는 순서와 스택을 정리하는 주체가 누구인가, 리턴 값을 어떤 레지스터에 담을 것인가, 함수 호출 시 어떤 레지스터를 유지할 것인가를 규정한다. 이를 정하는 이유는 모든 개발자가 C로 개발을 할 때 인간의 관점에서 이해하기 쉬운 코드를 만들기 위해 함수를 사용하게 되는데 이 함수가 기계에서 돌아갈 때 동작하는 규칙을 정해야 효율적으로 사용이 가능하기 때문이다.</p>
+<p>이게 뭐가 중요한가라고 생각할 수도 있지만 이에 대한 이해가 없다면 해결하기 힘든 문제가 있고, 해결하더라도 찝찝한 경우가 생각보다 자주 발생한다.</p>
+<p>왜냐하면 대부분 호출 규약이 문제를 일으키는 경우는 크로스 플랫폼 상황에서 발생하기 때문이다. 호출 규약의 핵심은 레지스터인데 서로 다른 아키텍처를 사용하는 플랫폼을 지원하는 경우 레지스터의 구조가 달라지기 때문에 내가 생각한 것과 다른 동작을 하는 코드를 만들 수 있기 때문이다. 예를 들어 같은 코드로 작성된 C 프로그램이라도 Windows에서 잘 동작하더라도 Linux에서 이상하게 동작하는 경우가 있다. 요즘은 Windows 환경에서 개발을 하더라도 Android, iOS 등 모바일 플랫폼을 타겟으로 개발을 하는 경우가 많아 많은 개발자들이 위와 같은 경우를 겪을 수 있다.</p>
+<p>추가적으로 디버깅 시 스택 프레임을 분석할 때도 호출 규약을 이해해야 보이는 것들이 있는데 스택 프레임, 레지스터 사용, 콜 스택 분석을 할 때 좀 더 구체적으로 이해할 수 있고 좀 더 정확하고 분석적인 디버깅이 가능하다.</p>
+<p>그리고 레지스터와 스택의 동작을 이해하고 코드 작성이 가능하기 때문에 성능 최적화에도 도움이 되며 컴퓨터 하드웨어에 대한 이해도를 높일 수 있다.</p>
+<p>호출 규약은 각 아키텍쳐별로 차이가 있고 여기서는 간단히 종류들만 소개해 보겠다.</p>
+<ul>
+<li>x86 : cdecl, stdcall, fastcall, thiscall 등</li>
+<li>x86-64 : Microsoft x64 calling convention, System V AMD64 ABI</li>
+<li>ARM : AAPCS</li>
+<li>ARM64 : AAPCS64</li>
+</ul>
+<p>위 호출 규약들이 잘 알려진 호출 규약들이다. 자세한 동작원리나 내용을 여기서 다루진 않겠다.</p>
+<p>ARM 계열은 호출 규약의 다양성이 제한적인데 이는 저전력 장비에서 주로 사용되는 특성상 단순화된 시스템 디자인이 유리하고 포팅과 유지 보수의 용이성을 위한 것으로 생각된다.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+    <h4><a href="https://peakfin.github.io/"></a></h4>
+</div>
+
+
+        </div><footer class="container">
+    <hr class="soften">
+    <p>
+&copy; 
+
+    PeakFin
+
+<span id="thisyear">2024</span>
+
+    | <a href="https://peakfin.github.io/">PeakFin.386</a> | <a href="mailto:peakfin2@gmail.com">peakfin2@gmail.com</a>
+
+
+</p>
+    <p class="text-center">
+        
+        
+        
+        
+        
+    </p>
+</footer>
+
+</body><link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/bootstrap-responsive.css">
+<link rel="stylesheet" href="/css/style.css">
+
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap-386.js"></script>
+<script src="/js/bootstrap-transition.js"></script>
+<script src="/js/bootstrap-alert.js"></script>
+<script src="/js/bootstrap-modal.js"></script>
+<script src="/js/bootstrap-dropdown.js"></script>
+<script src="/js/bootstrap-scrollspy.js"></script>
+<script src="/js/bootstrap-tab.js"></script>
+<script src="/js/bootstrap-tooltip.js"></script>
+<script src="/js/bootstrap-popover.js"></script>
+<script src="/js/bootstrap-button.js"></script>
+<script src="/js/bootstrap-collapse.js"></script>
+<script src="/js/bootstrap-carousel.js"></script>
+<script src="/js/bootstrap-typeahead.js"></script>
+<script src="/js/bootstrap-affix.js"></script>
+<script>
+    _386 = { 
+        fastLoad: false ,
+        onePass: false , 
+        speedFactor: 1 
+    };
+
+    
+    function ThisYear() {
+        document.getElementById('thisyear').innerHTML = new Date().getFullYear();
+    };
+</script>
+</html>

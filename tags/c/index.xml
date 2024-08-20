@@ -6,7 +6,7 @@
     <description>Recent content in C on PeakFin.386</description>
     <generator>Hugo</generator>
     <language>kr</language>
-    <lastBuildDate>Mon, 19 Aug 2024 11:15:48 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 20 Aug 2024 05:08:46 +0900</lastBuildDate>
     <atom:link href="https://peakfin.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>머릿말</title>
@@ -14,6 +14,13 @@
       <pubDate>Mon, 19 Aug 2024 11:15:48 +0900</pubDate>
       <guid>https://peakfin.github.io/posts/cc&#43;&#43;/preface/</guid>
       <description>게임 클라이언트 개발자로 일을 하다 보면 결국 c, c++가 주력 언어가 될 수 밖에 없다고 생각한다.&#xA;이유는 여러 가지가 있겠지만 게임 클라이언트 개발자는 그래픽스 프로그래밍을 해야하고 그래픽스 API는 c, c++ 기반으로 만들어지기 때문이다. 상용 엔진을 사용하더라도 마찬가지이다.&#xA;그래서 가장 주력으로 삼고 있는 c, c++에 관한 이야기를 남겨보고자 한다. 그냥 그때그때 생각나거나 하고 싶은 이야기가 있으면 하나씩 글을 남겨보겠다.</description>
+    </item>
+    <item>
+      <title>c,c&#43;&#43; 이야기 1.호출규약</title>
+      <link>https://peakfin.github.io/posts/cc&#43;&#43;/calling_convention/</link>
+      <pubDate>Tue, 20 Aug 2024 05:08:46 +0900</pubDate>
+      <guid>https://peakfin.github.io/posts/cc&#43;&#43;/calling_convention/</guid>
+      <description>이 글에서는 호출 규약에 대한 대략적인 내용과 나의 견해를 남기고자 한다.&#xA;호출 규약이란 C에서 함수를 사용할 때 함수를 호출하는 입장과 호출 받는 입장에서의 데이터 전달 방식과 스택 사용 방식에 대한 규칙이라고 할 수 있다. 주로 매개변수가 스택에 푸시되는 순서와 스택을 정리하는 주체가 누구인가, 리턴 값을 어떤 레지스터에 담을 것인가, 함수 호출 시 어떤 레지스터를 유지할 것인가를 규정한다. 이를 정하는 이유는 모든 개발자가 C로 개발을 할 때 인간의 관점에서 이해하기 쉬운 코드를 만들기 위해 함수를 사용하게 되는데 이 함수가 기계에서 돌아갈 때 동작하는 규칙을 정해야 효율적으로 사용이 가능하기 때문이다.</description>
     </item>
   </channel>
 </rss>
