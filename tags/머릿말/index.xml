@@ -6,7 +6,7 @@
     <description>Recent content in 머릿말 on PeakFin.386</description>
     <generator>Hugo</generator>
     <language>kr</language>
-    <lastBuildDate>Mon, 19 Aug 2024 11:15:48 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 26 Aug 2024 21:15:48 +0900</lastBuildDate>
     <atom:link href="https://peakfin.github.io/tags/%EB%A8%B8%EB%A6%BF%EB%A7%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>머릿말</title>
@@ -21,6 +21,13 @@
       <pubDate>Mon, 19 Aug 2024 11:15:48 +0900</pubDate>
       <guid>https://peakfin.github.io/posts/cc&#43;&#43;/preface/</guid>
       <description>게임 클라이언트 개발자로 일을 하다 보면 결국 c, c++가 주력 언어가 될 수 밖에 없다고 생각한다.&#xA;이유는 여러 가지가 있겠지만 게임 클라이언트 개발자는 그래픽스 프로그래밍을 해야하고 그래픽스 API는 c, c++ 기반으로 만들어지기 때문이다. 상용 엔진을 사용하더라도 마찬가지이다.&#xA;그래서 가장 주력으로 삼고 있는 c, c++에 관한 이야기를 남겨보고자 한다. 그냥 그때그때 생각나거나 하고 싶은 이야기가 있으면 하나씩 글을 남겨보겠다.</description>
+    </item>
+    <item>
+      <title>머릿말</title>
+      <link>https://peakfin.github.io/posts/algorithm/preface/</link>
+      <pubDate>Mon, 26 Aug 2024 21:15:48 +0900</pubDate>
+      <guid>https://peakfin.github.io/posts/algorithm/preface/</guid>
+      <description>게임 클라이언트 개발을 하다 보면 크게 두 가지 카테고리의 목표로 개발을 하게 된다. 화면에 보이는 것을 어떻게 표현할 것인가를 담당하는 그래픽스, 게임 세계의 규칙을 구현하는 알고리즘.&#xA;게임 개발 중 내가 중요하게 느꼈던 로직들을 소개하거나 새롭게 공부하는 것들을 이 카테고리에 남겨볼까 한다.</description>
     </item>
   </channel>
 </rss>
