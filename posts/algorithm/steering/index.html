@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="kr"><head>
-	<meta name="generator" content="Hugo 0.129.0">
     <title>PeakFin.386</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
@@ -48,111 +47,36 @@
 
 <div class="row-fluid navmargin">
     <div class="page-header">
-        <h1>PeakFin.386</h1>
+        <h1>algorithm 이야기 1. 스티어링 - Thu, Aug 29, 2024</h1>
     </div>
-</div>
+    <p class="lead">스티어링을 잘 만들면 게임이 있어보인다.
+</p>
+    <p>스티어링은 게임내 케릭터나 객체의 움직임을 제어하는데 사용되는 방법을 구현하는 것을 의미한다.</p>
+<p>1987년 Craig Reynolds의 논문에서 제안 된 개념 중 하나인데, Boid 모델(bird-oid object model)은 새의 군집 행동을 모방한 가상의 객체를 했고 이 모델에서 간단한 3가지 행동 규칙을 따른다.</p>
+<ol>
+<li>분리 : 다른 개체와 충돌을 피하기 위해 너무 가까워지면 서로 떨어지게 한다.</li>
+<li>정렬 : 근처에 있는 다른 개체와 동일한 방향으로 움직이도록 벡터를 변경한다.</li>
+<li>응집 : 무리의 중심으로 향하려고 하는 경향을 가지고 다른 개체들과 무리의 중심에 가까워 지려고 노력한다.</li>
+</ol>
+<p>이때 각 행동 규칙은 각각 하나의 스티어링 행동으로 간주된다. 각각의 개체는 이 세 가지 스티어링 행동을 적절히 조합해 주변 개체들과 상호작용하며 움직이면서 군집 행동을 생성하게 된다.</p>
+<p>이 개념을 차용해 게임의 케릭터나 NPC의 움직임에 활용하게 된 것이다. 자율주행과 같은 AI 산업에서도 굉장히 중요한 참고 자료로 사용되고 있다.</p>
+<p>나는 항상 FSM이나 비헤이비어 트리와 함께 사용해 게임 내 케릭터의 움직임을 유연하게 만드는데 활용했다. FSM이 스티어링의 행동을 선택하거나 비헤이비어 트리가 스티어링 행동을 선택하는 구조로 만들어 사용하면 좋은 시너지가 난다.</p>
+<p>주로 구현했던 스티어링들의 행동을 나열하면 아래와 같다.</p>
+<ol>
+<li>Seeking : 목표 지점을 향해 이동하는 가장 기본적인 스티어링 행동.</li>
+<li>Fleeing : 목표 저점에서 멀어지도록 하는 스티어링 행동.</li>
+<li>Arrival : 목표 지점에 도달해 속도를 줄이며 부드럽게 멈추는 스티어링 행동.</li>
+<li>Avoiding : 장애물이나 위협 요소를 피하며 목표를 향해 이동하는 스티어링 행동.</li>
+<li>Pursuit : 움직이는 목표를 추적하는 스티어링 행동. 형재 위치와 예측한 미래 위치를 모두 사용하여 추적한다.</li>
+<li>Evade : 목표로부터 도망가는 스티어링 행동.</li>
+</ol>
+<p>위와 같은 스티어링 행동들을 가중치를 적절히 사용해 복합적으로 사용해 케릭터의 움직임을 제어하는 것이 중요하다.</p>
+<p>중요한건 FSM이나 비헤이비어 트리가 스티어링이 아니라는 점이다. FSM이나 비헤이비어 트리를 통해 스티어링을 선택해 사용하게 되는 것이 중요하고 이에따라 독립적인 구현을 해야한다.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
-<div class="row-fluid">
-    <div class="span9 bs-docs-sidebar">
-        <p class="lead">반갑습니다. PeakFin의 386 스타일 블로그 입니다.</p>
-        <p></p>
-        <p>게임을 좋아하는 프로그래머 아저씨 입니다.</p>
-        <p></p>
-        <hr class="soften">
-        <p></p>
-        <h1></h1>
-        <ul>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </ul>
-    </div>
-
-    <div class="span3 bs-docs-sidebar">
-        <h1></h1>
-        <ul class="nav nav-list bs-docs-sidenav">
-            
-<li>
-    <a href="https://peakfin.github.io/categories/algorithm/">Algorithm</a>
-</li>
-
-<li>
-    <a href="https://peakfin.github.io/categories/chat/">Chat</a>
-</li>
-
-<li>
-    <a href="https://peakfin.github.io/categories/cc&#43;&#43;/">C,c&#43;&#43;</a>
-</li>
-
-<li>
-    <a href="https://peakfin.github.io/categories/graphics/">Graphics</a>
-</li>
-
-        </ul>
-        <p></p>
-        <h1></h1>
-        <ul class="nav nav-list bs-docs-sidenav">
-            
-<li>
-    <a href="https://peakfin.github.io/tags/steering/">Steering</a>
-</li>
-
-<li>
-    <a href="https://peakfin.github.io/tags/%ED%98%B8%EC%B6%9C%EA%B7%9C%EC%95%BD/">호출규약</a>
-</li>
-
-<li>
-    <a href="https://peakfin.github.io/tags/algorithm/">Algorithm</a>
-</li>
-
-<li>
-    <a href="https://peakfin.github.io/tags/preface/">Preface</a>
-</li>
-
-<li>
-    <a href="https://peakfin.github.io/tags/%EB%A8%B8%EB%A6%BF%EB%A7%90/">머릿말</a>
-</li>
-
-<li>
-    <a href="https://peakfin.github.io/tags/%EC%9E%A1%EB%8B%B4/">잡담</a>
-</li>
-
-<li>
-    <a href="https://peakfin.github.io/tags/c/">C</a>
-</li>
-
-<li>
-    <a href="https://peakfin.github.io/tags/cc&#43;&#43;/">C,c&#43;&#43;</a>
-</li>
-
-<li>
-    <a href="https://peakfin.github.io/tags/c&#43;&#43;/">C&#43;&#43;</a>
-</li>
-
-<li>
-    <a href="https://peakfin.github.io/tags/calling-convention/">Calling Convention</a>
-</li>
-
-        </ul>
-    </div>
+    <h4><a href="https://peakfin.github.io/"></a></h4>
 </div>
 
 

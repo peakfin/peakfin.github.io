@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Algorithm on PeakFin.386</title>
-    <link>https://peakfin.github.io/categories/algorithm/</link>
-    <description>Recent content in Algorithm on PeakFin.386</description>
+    <title>Steering on PeakFin.386</title>
+    <link>https://peakfin.github.io/tags/steering/</link>
+    <description>Recent content in Steering on PeakFin.386</description>
     <generator>Hugo</generator>
     <language>kr</language>
     <lastBuildDate>Thu, 29 Aug 2024 13:08:46 +0900</lastBuildDate>
-    <atom:link href="https://peakfin.github.io/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>머릿말</title>
-      <link>https://peakfin.github.io/posts/algorithm/preface/</link>
-      <pubDate>Mon, 26 Aug 2024 21:15:48 +0900</pubDate>
-      <guid>https://peakfin.github.io/posts/algorithm/preface/</guid>
-      <description>게임 클라이언트 개발을 하다 보면 크게 두 가지 카테고리의 목표로 개발을 하게 된다. 화면에 보이는 것을 어떻게 표현할 것인가를 담당하는 그래픽스, 게임 세계의 규칙을 구현하는 알고리즘.&#xA;게임 개발 중 내가 중요하게 느꼈던 로직들을 소개하거나 새롭게 공부하는 것들을 이 카테고리에 남겨볼까 한다.</description>
-    </item>
+    <atom:link href="https://peakfin.github.io/tags/steering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>algorithm 이야기 1. 스티어링</title>
       <link>https://peakfin.github.io/posts/algorithm/steering/</link>
