@@ -6,7 +6,7 @@
     <description>Recent content in 호출규약 on PeakFin.386</description>
     <generator>Hugo</generator>
     <language>kr</language>
-    <lastBuildDate>Thu, 29 Aug 2024 13:08:46 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 20 Aug 2024 05:08:46 +0900</lastBuildDate>
     <atom:link href="https://peakfin.github.io/tags/%ED%98%B8%EC%B6%9C%EA%B7%9C%EC%95%BD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>c,c&#43;&#43; 이야기 1.호출규약</title>
@@ -14,13 +14,6 @@
       <pubDate>Tue, 20 Aug 2024 05:08:46 +0900</pubDate>
       <guid>https://peakfin.github.io/posts/cc&#43;&#43;/calling_convention/</guid>
       <description>이 글에서는 호출 규약에 대한 대략적인 내용과 나의 견해를 남기고자 한다.&#xA;호출 규약이란 C에서 함수를 사용할 때 함수를 호출하는 입장과 호출 받는 입장에서의 데이터 전달 방식과 스택 사용 방식에 대한 규칙이라고 할 수 있다. 주로 매개변수가 스택에 푸시되는 순서와 스택을 정리하는 주체가 누구인가, 리턴 값을 어떤 레지스터에 담을 것인가, 함수 호출 시 어떤 레지스터를 유지할 것인가를 규정한다. 이를 정하는 이유는 모든 개발자가 C로 개발을 할 때 인간의 관점에서 이해하기 쉬운 코드를 만들기 위해 함수를 사용하게 되는데 이 함수가 기계에서 돌아갈 때 동작하는 규칙을 정해야 효율적으로 사용이 가능하기 때문이다.</description>
-    </item>
-    <item>
-      <title>algorithm 이야기 1. 스티어링</title>
-      <link>https://peakfin.github.io/posts/algorithm/steering/</link>
-      <pubDate>Thu, 29 Aug 2024 13:08:46 +0900</pubDate>
-      <guid>https://peakfin.github.io/posts/algorithm/steering/</guid>
-      <description>스티어링은 게임내 케릭터나 객체의 움직임을 제어하는데 사용되는 방법을 구현하는 것을 의미한다.&#xA;1987년 Craig Reynolds의 논문에서 제안 된 개념 중 하나인데, Boid 모델(bird-oid object model)은 새의 군집 행동을 모방한 가상의 객체를 했고 이 모델에서 간단한 3가지 행동 규칙을 따른다.&#xA;분리 : 다른 개체와 충돌을 피하기 위해 너무 가까워지면 서로 떨어지게 한다. 정렬 : 근처에 있는 다른 개체와 동일한 방향으로 움직이도록 벡터를 변경한다. 응집 : 무리의 중심으로 향하려고 하는 경향을 가지고 다른 개체들과 무리의 중심에 가까워 지려고 노력한다.</description>
     </item>
   </channel>
 </rss>

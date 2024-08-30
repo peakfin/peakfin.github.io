@@ -9,24 +9,17 @@
     <lastBuildDate>Thu, 29 Aug 2024 13:08:46 +0900</lastBuildDate>
     <atom:link href="https://peakfin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Algorithm</title>
+      <link>https://peakfin.github.io/tags/algorithm/</link>
+      <pubDate>Thu, 29 Aug 2024 13:08:46 +0900</pubDate>
+      <guid>https://peakfin.github.io/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Steering</title>
       <link>https://peakfin.github.io/tags/steering/</link>
       <pubDate>Thu, 29 Aug 2024 13:08:46 +0900</pubDate>
       <guid>https://peakfin.github.io/tags/steering/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>호출규약</title>
-      <link>https://peakfin.github.io/tags/%ED%98%B8%EC%B6%9C%EA%B7%9C%EC%95%BD/</link>
-      <pubDate>Thu, 29 Aug 2024 13:08:46 +0900</pubDate>
-      <guid>https://peakfin.github.io/tags/%ED%98%B8%EC%B6%9C%EA%B7%9C%EC%95%BD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Algorithm</title>
-      <link>https://peakfin.github.io/tags/algorithm/</link>
-      <pubDate>Mon, 26 Aug 2024 21:15:48 +0900</pubDate>
-      <guid>https://peakfin.github.io/tags/algorithm/</guid>
       <description></description>
     </item>
     <item>
@@ -76,6 +69,13 @@
       <link>https://peakfin.github.io/tags/calling-convention/</link>
       <pubDate>Tue, 20 Aug 2024 05:08:46 +0900</pubDate>
       <guid>https://peakfin.github.io/tags/calling-convention/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>호출규약</title>
+      <link>https://peakfin.github.io/tags/%ED%98%B8%EC%B6%9C%EA%B7%9C%EC%95%BD/</link>
+      <pubDate>Tue, 20 Aug 2024 05:08:46 +0900</pubDate>
+      <guid>https://peakfin.github.io/tags/%ED%98%B8%EC%B6%9C%EA%B7%9C%EC%95%BD/</guid>
       <description></description>
     </item>
     <item>
